@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+    <TextView
+        android:id="@+id/display_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_button"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="手动输入应用包名进行检索"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+
+
+    <EditText
+        android:id="@+id/package_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter package name"/>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/package_name_input"
+        android:layout_margin="16dp"
+        android:text="Submit"/>
+
+</RelativeLayout>
